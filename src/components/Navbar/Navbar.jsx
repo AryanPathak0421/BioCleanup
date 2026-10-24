@@ -82,20 +82,13 @@ export default function Navbar() {
             {/* Logo */}
             <button 
               onClick={() => navigateTo('home')} 
-              className="flex items-center gap-2.5 text-left group"
+              className="flex items-center text-left group"
             >
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#143D2B] to-[#20593E] flex items-center justify-center text-white shadow-md shadow-emerald-950/20 group-hover:scale-105 transition-transform duration-200">
-                <Leaf size={22} className="text-emerald-300 -rotate-12" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl md:text-2xl font-extrabold tracking-tight font-display text-[#143D2B] flex items-center gap-1">
-                  Bio<span className="text-emerald-600">Cleanup</span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block mb-1"></span>
-                </span>
-                <span className="text-[10px] tracking-widest uppercase font-semibold text-[#6E8276] -mt-1">
-                  Pure &amp; Powerful
-                </span>
-              </div>
+              <img 
+                src="/images/biocleanup-logo.jpg" 
+                alt="BioCleanup - Pure & Powerful" 
+                className="h-9 sm:h-11 object-contain hover:scale-105 transition-transform duration-200 rounded-lg"
+              />
             </button>
           </div>
 
