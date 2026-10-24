@@ -143,6 +143,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* OFFICIAL BRAND SHOWCASE BANNER */}
+      <section className="container">
+        <div className="relative rounded-3xl overflow-hidden border border-[#E5DFD3] shadow-md bg-gradient-to-r from-emerald-900 to-teal-950 group">
+          <img
+            src="/images/biocleanup-hero-banner.jpg"
+            alt="BioCleanup - Pure & Powerful 100% Natural Actives"
+            className="w-full h-auto object-cover object-center group-hover:scale-[1.01] transition-transform duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/70 via-transparent to-transparent flex items-end p-4 sm:p-8">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full gap-3">
+              <div className="text-white">
+                <span className="badge badge-leaf bg-white/20 text-emerald-200 border-white/30 text-[10px]">
+                  Certified Pure Formulation
+                </span>
+                <p className="text-xs sm:text-sm text-emerald-100 font-semibold mt-1">
+                  100% Natural Actives • Kills 99.9% Germs • Eco Friendly
+                </p>
+              </div>
+              <button
+                onClick={() => navigateTo('shop')}
+                className="btn btn-primary bg-white hover:bg-emerald-50 text-[#143D2B] text-xs font-bold px-5 py-2.5 rounded-full shadow-lg shrink-0"
+              >
+                Shop Full Clean Range →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 2. TRUST SECTION */}
       <section className="container">
         <div className="bg-white rounded-3xl border border-[#E5DFD3] p-6 sm:p-8 md:p-10 shadow-sm">

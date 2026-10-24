@@ -27,7 +27,7 @@ export const categories = [
   {
     id: "personal-care",
     name: "Personal Care",
-    count: 1,
+    count: 2,
     icon: "Heart",
     tagline: "pH-balanced, skin-loving botanical formulas",
     image: "/images/products/hand-wash-orange.jpg",
@@ -41,15 +41,6 @@ export const categories = [
     tagline: "Cuts tough grease naturally with lime oils",
     image: "/images/products/dish-wash-lime.jpg",
     accent: "#DDA133"
-  },
-  {
-    id: "eco-essentials",
-    name: "Eco Essentials",
-    count: 1,
-    icon: "Leaf",
-    tagline: "Sustainable everyday bio essentials",
-    image: "/images/products/hand-wash-orange.jpg",
-    accent: "#4E7D59"
   }
 ];
 
@@ -69,7 +60,7 @@ export const products = [
     image: "/images/products/floor-cleaner-lime.jpg",
     images: [
       "/images/products/floor-cleaner-lime.jpg",
-      "/images/products/floor-cleaner-lime.jpg"
+      "/images/products/biocleanup-labels-full.jpg"
     ],
     inStock: true,
     stock: 48,
@@ -106,6 +97,55 @@ export const products = [
     barcode: "8 906123 456857"
   },
   {
+    id: "floor-cleaner-lavender-1l",
+    name: "BioCleanup Floor Cleaner (Lavender 1L)",
+    subtitle: "Lavender Shine • 1 Litre Mega Pack",
+    category: "Floor & Surface Care",
+    categoryId: "floor-surface",
+    price: 180,
+    originalPrice: 220,
+    discount: 18,
+    netVol: "1L",
+    rating: 4.9,
+    reviewsCount: 295,
+    image: "/images/products/biocleanup-labels-full.jpg",
+    images: [
+      "/images/products/biocleanup-labels-full.jpg",
+      "/images/products/floor-cleaner-lime.jpg"
+    ],
+    inStock: true,
+    stock: 60,
+    isBestSeller: true,
+    isEcoPick: true,
+    isFeatured: true,
+    tag: "1L Value Pack",
+    headline: "LONG LASTING FRESHNESS & SHINE",
+    shortDesc: "BioCleanup 1L Lavender Floor Cleaner removes dirt, stubborn stains and germs while infusing living spaces with soothing lavender aroma.",
+    keyPoints: [
+      "Safe • Effective • Shiny finish on all types of floors",
+      "Removes deep grime without stripping natural shine",
+      "Soothing lavender essential aroma lasts all day",
+      "Economical 1 Litre family value pack"
+    ],
+    directions: [
+      "Add 2 capfuls in half a bucket of water.",
+      "Mop the floor with solution.",
+      "No need to rinse. Streak-free drying."
+    ],
+    ingredients: [
+      "Aqua",
+      "Non-Ionic Surfactant",
+      "Diethylene Glycol Monobutyl Ether",
+      "Fragrance (Lavender)",
+      "Color",
+      "Preservative"
+    ],
+    caution: "Keep out of reach of children. Avoid contact with eyes. Do not ingest. Store in a cool & dry place.",
+    certifications: ["Eco Friendly", "Safe on All Floors", "Long Lasting Freshness", "Recycle Pack", "Made in India"],
+    mrpText: "MRP ₹180/- (Inclusive of all taxes)",
+    barcode: "8 906123 456319"
+  },
+  {
     id: "toilet-cleaner-mint",
     name: "BioCleanup Toilet Cleaner",
     subtitle: "Fresh Mint • 10X Protection",
@@ -119,7 +159,8 @@ export const products = [
     reviewsCount: 489,
     image: "/images/products/toilet-cleaner-mint.jpg",
     images: [
-      "/images/products/toilet-cleaner-mint.jpg"
+      "/images/products/toilet-cleaner-mint.jpg",
+      "/images/products/biocleanup-labels-full.jpg"
     ],
     inStock: true,
     stock: 65,
@@ -154,8 +195,110 @@ export const products = [
     barcode: "8 906123 456789"
   },
   {
+    id: "toilet-cleaner-10x",
+    name: "BioCleanup Toilet Cleaner (Max 10X)",
+    subtitle: "Heavy Duty • 500ml Value Pack",
+    category: "Toilet & Bathroom",
+    categoryId: "toilet-bathroom",
+    price: 120,
+    originalPrice: 150,
+    discount: 20,
+    netVol: "500ml",
+    rating: 5.0,
+    reviewsCount: 612,
+    image: "/images/products/toilet-cleaner-10x.jpg",
+    images: [
+      "/images/products/toilet-cleaner-10x.jpg",
+      "/images/products/toilet-cleaner-mint.jpg"
+    ],
+    inStock: true,
+    stock: 55,
+    isBestSeller: true,
+    isEcoPick: true,
+    isFeatured: true,
+    tag: "Max Power",
+    headline: "10X BETTER CLEANING & GERM PROTECTION",
+    shortDesc: "BioCleanup Max 10X Toilet Cleaner is formulated for high-traffic and stubborn hard-water areas. Provides 10X stronger antimicrobial shield with extended cling action.",
+    keyPoints: [
+      "10X active cleaning strength with concentrated formula",
+      "Eliminates 99.9% bacteria, mold, and scale build-up",
+      "Curved nozzle bottle for 360-degree rim coverage",
+      "Eco-conscious bottle crafted with recyclable polymers"
+    ],
+    directions: [
+      "Squeeze under the rim and around the bowl evenly.",
+      "Let it sit for 10-15 minutes for maximum action.",
+      "Brush if needed and flush."
+    ],
+    ingredients: [
+      "Water",
+      "Hydrochloric Acid (Optimized Buffer)",
+      "Surfactant",
+      "High-Viscosity Thickener",
+      "Mint Essential Oil",
+      "Fragrance",
+      "Color"
+    ],
+    caution: "Keep out of reach of children. Avoid contact with eyes and skin. Do not mix with other cleaners. Wear gloves for sensitive skin.",
+    certifications: ["10X Germ Protection", "Thick Formula", "Disinfects Deep", "Recycle Pack", "Made in India"],
+    mrpText: "MRP ₹120/- (Inclusive of all taxes)",
+    barcode: "8 906123 456789"
+  },
+  {
+    id: "hand-wash-lime",
+    name: "BioCleanup Hand Wash (Lime Flavour)",
+    subtitle: "Zesty Lime • Gentle Yet Effective",
+    category: "Personal Care",
+    categoryId: "personal-care",
+    price: 110,
+    originalPrice: 135,
+    discount: 19,
+    netVol: "250ml",
+    rating: 4.9,
+    reviewsCount: 412,
+    image: "/images/products/biocleanup-labels-full.jpg",
+    images: [
+      "/images/products/biocleanup-labels-full.jpg",
+      "/images/products/hand-wash-orange.jpg"
+    ],
+    inStock: true,
+    stock: 75,
+    isBestSeller: true,
+    isEcoPick: true,
+    isFeatured: true,
+    tag: "Gentle Active",
+    headline: "SOFT ON HANDS | TOUGH ON GERMS",
+    shortDesc: "BioCleanup Hand Wash with Lime is gentle on hands and tough on germs. Its refreshing lime fragrance leaves your hands feeling fresh, squeaky clean, and hydrated.",
+    keyPoints: [
+      "Gentle yet effective botanical formula",
+      "pH balanced 5.5 to safeguard hand skin barrier",
+      "Real cold-pressed lime oils provide natural germ defense",
+      "Dermatologically tested and hypoallergenic"
+    ],
+    directions: [
+      "Pump a small amount on wet hands.",
+      "Rub thoroughly for 20 seconds.",
+      "Rinse well and dry."
+    ],
+    ingredients: [
+      "Aqua",
+      "Sodium Laureth Sulfate",
+      "Cocamidopropyl Betaine",
+      "Glycerin",
+      "Fragrance",
+      "Lime Oil",
+      "Color",
+      "Sodium Chloride",
+      "Preservative"
+    ],
+    caution: "For external use only. Avoid contact with eyes. If irritation occurs, discontinue use.",
+    certifications: ["Eco Friendly", "pH Balanced", "Dermatologically Tested", "Made in India"],
+    mrpText: "MRP ₹110/- (Inclusive of all taxes)",
+    barcode: "8 906123 456766"
+  },
+  {
     id: "hand-wash-orange",
-    name: "BioCleanup Hand Wash",
+    name: "BioCleanup Hand Wash (Orange)",
     subtitle: "Sweet Orange • pH Balanced",
     category: "Personal Care",
     categoryId: "personal-care",
@@ -167,7 +310,8 @@ export const products = [
     reviewsCount: 524,
     image: "/images/products/hand-wash-orange.jpg",
     images: [
-      "/images/products/hand-wash-orange.jpg"
+      "/images/products/hand-wash-orange.jpg",
+      "/images/products/biocleanup-labels-full.jpg"
     ],
     inStock: true,
     stock: 82,
@@ -207,7 +351,7 @@ export const products = [
   },
   {
     id: "dish-wash-lime",
-    name: "BioCleanup Dish Wash",
+    name: "BioCleanup Dish Wash (200ml)",
     subtitle: "Lime Flavour • Grease Cutting",
     category: "Kitchen & Utensils",
     categoryId: "kitchen-utensils",
@@ -219,7 +363,8 @@ export const products = [
     reviewsCount: 390,
     image: "/images/products/dish-wash-lime.jpg",
     images: [
-      "/images/products/dish-wash-lime.jpg"
+      "/images/products/dish-wash-lime.jpg",
+      "/images/products/biocleanup-labels-full.jpg"
     ],
     inStock: true,
     stock: 70,
@@ -260,175 +405,54 @@ export const products = [
     barcode: "8 906123 456819"
   },
   {
-    id: "toilet-cleaner-10x",
-    name: "BioCleanup Toilet Cleaner (Max 10X)",
-    subtitle: "Heavy Duty • 500ml Value Pack",
-    category: "Toilet & Bathroom",
-    categoryId: "toilet-bathroom",
-    price: 120,
-    originalPrice: 150,
-    discount: 20,
-    netVol: "500ml",
-    rating: 5.0,
-    reviewsCount: 612,
-    image: "/images/products/toilet-cleaner-10x.jpg",
-    images: [
-      "/images/products/toilet-cleaner-10x.jpg"
-    ],
-    inStock: true,
-    stock: 55,
-    isBestSeller: true,
-    isEcoPick: true,
-    isFeatured: true,
-    tag: "Max Power",
-    headline: "10X BETTER CLEANING & GERM PROTECTION",
-    shortDesc: "BioCleanup Max 10X Toilet Cleaner is formulated for high-traffic and stubborn hard-water areas. Provides 10X stronger antimicrobial shield with extended cling action.",
-    keyPoints: [
-      "10X active cleaning strength with concentrated formula",
-      "Eliminates 99.9% bacteria, mold, and scale build-up",
-      "Curved nozzle bottle for 360-degree rim coverage",
-      "Eco-conscious bottle crafted with recyclable polymers"
-    ],
-    directions: [
-      "Squeeze under the rim and around the bowl evenly.",
-      "Let it sit for 10-15 minutes for maximum action.",
-      "Brush if needed and flush."
-    ],
-    ingredients: [
-      "Water",
-      "Hydrochloric Acid (Optimized Buffer)",
-      "Surfactant",
-      "High-Viscosity Thickener",
-      "Mint Essential Oil",
-      "Fragrance",
-      "Color"
-    ],
-    caution: "Keep out of reach of children. Avoid contact with eyes and skin. Do not mix with other cleaners. Wear gloves for sensitive skin.",
-    certifications: ["10X Germ Protection", "Thick Formula", "Disinfects Deep", "Recycle Pack", "Made in India"],
-    mrpText: "MRP ₹120/- (Inclusive of all taxes)",
-    barcode: "8 906123 456789"
-  },
-  {
-    id: "glass-cleaner-herbal",
-    name: "BioCleanup Glass & Surface Polish",
-    subtitle: "Eucalyptus & Mint • Streak-Free",
-    category: "Floor & Surface Care",
-    categoryId: "floor-surface",
-    price: 135,
-    originalPrice: 160,
-    discount: 15,
-    netVol: "500ml",
-    rating: 4.7,
-    reviewsCount: 215,
-    image: "/images/products/floor-cleaner-lime.jpg",
-    images: [
-      "/images/products/floor-cleaner-lime.jpg"
-    ],
-    inStock: true,
-    stock: 32,
-    isBestSeller: false,
-    isEcoPick: true,
-    isFeatured: false,
-    tag: "New Launch",
-    isComingSoonImage: true,
-    headline: "CRYSTAL CLEAR GLASS WITHOUT TOXINS",
-    shortDesc: "Natural streak-free glass and mirror spray formulated with grain bio-alcohol and invigorating eucalyptus extract. Repels dust and finger smudges.",
-    keyPoints: [
-      "Anti-fog and anti-static formula",
-      "Dries rapidly without streaks or haze",
-      "Safe on tinted automotive glass, microwave doors & TV screens"
-    ],
-    directions: [
-      "Turn nozzle to spray mode.",
-      "Spray 6-8 inches away from glass.",
-      "Wipe clean with a microfiber cloth."
-    ],
-    ingredients: ["Water", "Plant Alcohol", "Eucalyptus Essential Oil", "Bio-Surfactant", "Biodegradable Preservative"],
-    caution: "Avoid spraying into eyes. Keep away from flames.",
-    certifications: ["Eco Friendly", "Zero Streaks", "Cruelty Free", "Made in India"],
-    mrpText: "MRP ₹135/- (Inclusive of all taxes)",
-    barcode: "8 906123 456890"
-  },
-  {
-    id: "kitchen-degreaser-citrus",
-    name: "BioCleanup Kitchen Degreaser",
-    subtitle: "Active Citrus • Chimney & Stove",
+    id: "dish-wash-500ml",
+    name: "BioCleanup Dish Wash (500ml Value Pack)",
+    subtitle: "Powerful Grease Cutting • Sparkling Clean",
     category: "Kitchen & Utensils",
     categoryId: "kitchen-utensils",
-    price: 145,
-    originalPrice: 175,
-    discount: 17,
+    price: 140,
+    originalPrice: 170,
+    discount: 18,
     netVol: "500ml",
-    rating: 4.8,
-    reviewsCount: 194,
-    image: "/images/products/dish-wash-lime.jpg",
+    rating: 4.9,
+    reviewsCount: 468,
+    image: "/images/products/biocleanup-labels-full.jpg",
     images: [
+      "/images/products/biocleanup-labels-full.jpg",
       "/images/products/dish-wash-lime.jpg"
     ],
     inStock: true,
-    stock: 28,
-    isBestSeller: false,
-    isEcoPick: true,
-    isFeatured: false,
-    tag: "Pro Clean",
-    isComingSoonImage: true,
-    headline: "DISSOLVES BURNT OILS & GREASE INSTANTLY",
-    shortDesc: "Heavy-duty plant solvent that melts hardened yellow grease on gas hobs, chimney baffles, exhaust fans, and air-fryer baskets.",
-    keyPoints: [
-      "Fast acting 3-minute penetration on baked oils",
-      "Non-corrosive to stainless steel and induction cooktops",
-      "Pleasant citrus peel scent instead of burning fumes"
-    ],
-    directions: [
-      "Spray directly on greasy area.",
-      "Let stand for 3-5 minutes.",
-      "Wipe away with a wet cloth and rinse."
-    ],
-    ingredients: ["Water", "Orange Terpene Solvents", "Plant Surfactants", "Sodium Carbonate", "Natural Preservative"],
-    caution: "Wear gloves for heavy degreasing. Do not ingest.",
-    certifications: ["100% Bio-Solvent", "Non Toxic Vapors", "Made in India"],
-    mrpText: "MRP ₹145/- (Inclusive of all taxes)",
-    barcode: "8 906123 456913"
-  },
-  {
-    id: "laundry-liquid-botanicals",
-    name: "BioCleanup Bio-Enzyme Laundry Wash",
-    subtitle: "Lavender & Aloe • Gentle Softness",
-    category: "Eco Essentials",
-    categoryId: "eco-essentials",
-    price: 249,
-    originalPrice: 299,
-    discount: 16,
-    netVol: "1000ml",
-    rating: 4.9,
-    reviewsCount: 388,
-    image: "/images/products/hand-wash-orange.jpg",
-    images: [
-      "/images/products/hand-wash-orange.jpg"
-    ],
-    inStock: true,
-    stock: 45,
+    stock: 50,
     isBestSeller: true,
     isEcoPick: true,
-    isFeatured: false,
-    tag: "Bio Enzymes",
-    isComingSoonImage: true,
-    headline: "PLANT POWER FOR FABRIC LONGEVITY",
-    shortDesc: "Ultra-concentrated liquid detergent with 4 natural enzymes that target protein, grass, and grease stains while keeping clothes soft and colorful.",
+    isFeatured: true,
+    tag: "500ml Value",
+    headline: "SPARKLING CLEAN EVERY TIME",
+    shortDesc: "BioCleanup Dish Wash 500ml cuts tough grease and removes oil effortlessly. Leaves your utensils sparkling clean with a fresh citrus note.",
     keyPoints: [
-      "Zero optical brighteners or synthetic phosphates",
-      "100% safe for baby clothes and organic cotton",
-      "Front-load and top-load washing machine compatible"
+      "Cuts tough grease instantly",
+      "Sparkling clean glassware and stainless steel",
+      "Safe and soft on hands during prolonged dishwashing",
+      "Value 500ml kitchen refill dispenser size"
     ],
     directions: [
-      "Pour 1 capful (30ml) for normal 6kg load.",
-      "Pour 1.5 capfuls for soiled gym wear or towels.",
-      "Run your preferred wash cycle."
+      "Take a few drops on a damp sponge.",
+      "Wash the utensils thoroughly.",
+      "Rinse with clean water."
     ],
-    ingredients: ["Aqua", "Plant Glucosides", "Protease & Amylase Enzymes", "Lavender Extract", "Coconut Fatty Acids", "Preservative"],
-    caution: "Store in cool dark spot. Keep away from small children.",
-    certifications: ["Zero Phosphates", "Hypoallergenic", "Eco Friendly", "Made in India"],
-    mrpText: "MRP ₹249/- (Inclusive of all taxes)",
-    barcode: "8 906123 456937"
+    ingredients: [
+      "Aqua",
+      "Linear Alkyl Benzene Sulphonic Acid",
+      "Sodium Laureth Sulfate",
+      "Cocamide DEA",
+      "Fragrance",
+      "Color",
+      "Salt",
+      "Preservative"
+    ],
+    caution: "Keep out of reach of children. Avoid contact with eyes. Do not ingest.",
+    certifications: ["Eco Friendly", "Recycle Pack", "Made in India"],
+    mrpText: "MRP ₹140/- (Inclusive of all taxes)",
+    barcode: "8 906123 456802"
   }
 ];

@@ -71,12 +71,13 @@ export default function Footer() {
           {/* Brand Info & Newsletter */}
           <div className="lg:col-span-2 flex flex-col gap-5">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center text-white">
-                <Leaf size={20} className="-rotate-12" />
+              <div className="bg-white p-1.5 rounded-xl shadow-xs">
+                <img 
+                  src="/images/biocleanup-logo.jpg" 
+                  alt="BioCleanup" 
+                  className="h-8 object-contain rounded-md"
+                />
               </div>
-              <span className="text-2xl font-bold font-display text-white">
-                Bio<span className="text-emerald-400">Cleanup</span>
-              </span>
             </div>
 
             <p className="text-sm text-emerald-100/75 leading-relaxed max-w-sm">
